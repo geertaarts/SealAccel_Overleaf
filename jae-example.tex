@@ -1,0 +1,163 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{jae}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+ 
+\title{Separation of Body Motion and Orientation in Accelerometer Data}
+\running{Static and test test  Dynamic}
+
+\author{Manon den Haan$^{1,2}$, \and Phil Lovell$^{3}$, \and Sophie Brasseur$^{1}$, \and
+  Paul Thompson$^{4}$, \and \& Geert Aarts$^{1,5,*}$.}
+
+\affiliations{
+\item Wageningen University and Research, Wageningen Marine Research, Ankerpark 27, 1781 AG Den Helder, the Netherlands.
+\item NIOZ Royal Netherlands Institute for Sea Research, Department of Coastal Systems and Utrecht University, Texel, The Netherlands.}
+
+
+\nwords{3450}
+\ntables{4}
+\nfig{4}
+\nref{59}
+
+\corr{\url{geert.aarts@wur.nl}}
+
+
+\begin{document}
+
+
+\maketitle
+
+
+\begin{abstract}
+  \noindent \begin{enumerate}
+  \item Animal-borne accelerometers are an extremely valuable addition to the current existing bio-logging devices, since they can provide detailed information on the animals’ energy expenditure and 3-dimensional movement. Accelerometers measure the total g-force, which \consists of both a static and dynamic component. The static component is a representation of the animal’s body orientation of the animal in a three dimensional space. When the animal is changing its orientation relative to the earth’s gravitational field, the gravitational force is divided differently among the three orthogonal dimensions. The dynamic component is the change in velocity as a result of body movement of the animal. The purpose of this study is to separate the static component and dynamic component objectively by applying Pythagoras theorem. 
+  \item By assuming that changes in body orientation are more gradual compared to the dynamic acceleration, the static component can be estimated by applying a moving average over the raw accelerometer measurements. The static component (of all three orthogonal axes combined) should be equal to 1g (=9.81 ms-2). Therefore the size of the smoothing window where the estimated total static component is closest to 1g, should yield the best approximation of this static component. 
+  \item Applying this method on both a harbor and grey seal, the length of respectively 0.96 and 0.60 seconds for the moving average was determined the best. 
+  \item \emph{Synthesis and applications.} Choosing the most optimal window has an effect on the estimation of the pitch and roll (static component) and energy expenditure (dynamic component). Though this method is objective in separating the static and dynamic component, we expect the results to be species and behavioral specific.
+  \end{enumerate}
+\end{abstract}
+
+\noindent \textbf{Keywords:} Energy expenditure, 3D movement
+
+
+
+\newpage
+
+
+\section*{Introduction}
+
+Direct observation of wild animals can be quite challenging. In many cases, the animals live in inaccessible environments (Watwood, Miller, Johnson, Madsen & Tyack 2006; Davis, Fuiman, Madden & Williams 2013) or are moving too fast or inconspicuous to be followed by the researcher. Especially marine mammals  that spend large amount of time submerged cannot easily be observed (Watwood, Miller, Johnson, Madsen & Tyack 2006). Instead of observing animals in the wild, bio-telemetry devices can be attached to the animal. This allows researchers to remotely study these wild, inaccessible animals.
+
+\section*{Material and methods}
+\cite{Ravi2005ActivityData}
+
+\subsection*{Study area}
+
+Text
+
+
+
+\subsection*{Statistical analyses}
+
+\subsubsection*{First ones}
+
+Text 
+
+\subsubsection*{Next ones}
+
+Text
+
+\section*{Results}
+
+Text 
+\section*{Discussion}
+
+ (Fig.~\ref{Fig2}). 
+
+
+
+\section*{Acknowledgments}
+
+A lot of people are to thank here.
+
+
+\newpage
+
+
+\bibliography{SealAccelRefs}
+
+
+\newpage
+
+
+\section*{Tables}
+
+
+\begin{table}[h!]
+  \caption{A first table caption.}
+  \label{Tab1}
+  \begin{center}
+    \begin{tabular}{p{3cm}p{10cm}}
+      Name & Description \\
+      \hline
+      Agri & Proportion of agricultural areas \\
+      Alpine & Proportion of alpine areas \\
+      Bare & Proportion of bare ground \\
+      DEM & Mean elevation \\
+      DEMslope & Mean slope \\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+
+\newpage
+
+
+\begin{table}[h!]
+  \caption{A second table caption, longer than the first one that was
+quite short. Indeed, it was supposed to be short, at the contrary of this one which is
+much more informative than the previous one.}
+  \label{Tab2}
+  \begin{center}
+    \begin{tabular}{lrrr}
+      Name & Mar & Spe1 & Spe2 \\
+      \hline
+      Agri & -0.050 & 0.026 & 0.173 \\
+      Alpine & -0.874 & -0.139 & 0.184 \\
+      Bare & -0.555 & -0.922 & 0.084 \\
+      DEM & -0.796 & -0.100 & 0.095 \\
+      DEMslope & -0.167 & -0.205 & 0.013 \\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+
+\newpage
+
+
+\section*{Figures}
+
+
+\begin{figure}[h!]
+  \caption{What a nice figure\dots}
+  \label{Fig1}
+  \begin{center}
+    \includegraphics[width=6cm]{Fig1}
+  \end{center}
+\end{figure}
+
+
+\newpage
+
+
+
+
+\end{document}
